@@ -13,14 +13,54 @@ body {
     max-height: 100vh;
 }
 
+#content {
+    display: grid;
+    grid-template-rows: 1fr 5fr .5fr;
+    height: 100vh;
+}
+
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    min-height: 6rem;
+    /* gap: 20px; */
+    background-color: black;
+    box-shadow: 0px 10px 21px -6px #666464;
+    position: relative;
+    padding: 1rem;
+}
+
+.logo {
+    color: rgb(223, 203, 178);
+    font-size: 4rem;
+    font-weight: 400;
+    margin-right: auto;
 }
 
 header > button {
-    border: 1px solid black;
+    border: none;
+    background: black;
+    color: antiquewhite;
+    font-size: 2.5rem;
+    cursor: pointer;
+    min-height: 3rem;
+    min-width: 4rem;
+    padding: 1rem;
+}
+
+header > button:hover {
+    background-color: rgb(36, 33, 33);
+    border-bottom: 2px solid antiquewhite;
+}
+
+header > button:active {
+    background-color: black;
+}
+
+main {
+    background-color: rgb(223, 203, 178);
+}
+
+footer {
+    background-color: black;
 }
