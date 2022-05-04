@@ -13,23 +13,24 @@ function cacheDom() {
     homeBtn.textContent = 'Home';
     menuBtn.textContent = 'Menu';
     aboutBtn.textContent = 'About';
-    header.appendChild(logo);
-    header.appendChild(homeBtn);
-    header.appendChild(menuBtn);
-    header.appendChild(aboutBtn);
-    main.appendChild(homeDiv);
-    return {contentDiv, header, logo, homeBtn, menuBtn, aboutBtn, main, footer};
+    // header.appendChild(logo);
+    // header.appendChild(homeBtn);
+    // header.appendChild(menuBtn);
+    // header.appendChild(aboutBtn);
+    // main.appendChild(homeDiv);
+    return {contentDiv, header, logo, homeBtn, menuBtn, aboutBtn, main, homeDiv, footer};
 }
 
 function appendElements() {
-    cacheDom();
-    cacheDom().contentDiv.appendChild(cacheDom().header);
-    cacheDom().header.appendChild(cacheDom().homeBtn);
-    cacheDom().header.appendChild(cacheDom().menuBtn);
-    cacheDom().header.appendChild(cacheDom().aboutBtn);
-    cacheDom().contentDiv.appendChild(cacheDom().main);
-    cacheDom().contentDiv.appendChild(cacheDom().footer);
-    console.log(cacheDom().logo)
+    var x = cacheDom();
+    x.contentDiv.appendChild(x.header);
+    x.header.appendChild(x.logo);
+    x.header.appendChild(x.homeBtn);
+    x.header.appendChild(x.menuBtn);
+    x.header.appendChild(x.aboutBtn);
+    x.contentDiv.appendChild(x.main);
+    x.main.appendChild(x.homeDiv);
+    x.contentDiv.appendChild(x.footer);
 }
 
 function renderPage() {
