@@ -21,7 +21,7 @@ body {
 #content {
     display: grid;
     grid-template-rows: 1fr 5fr .5fr;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 header {
@@ -72,11 +72,11 @@ main {
 main > div {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     gap: 1rem;
     width: 50rem;
-    height: 30rem;
+    min-height: 30rem;
+    margin: 2rem 0 2rem 0 ;
     padding: 1rem;
     border: 3px solid rgb(223, 203, 178);
     border-radius: 5px;
@@ -98,7 +98,24 @@ main > div > h3 {
 .menu-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20rem;
+    gap: 10rem;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.menu-item-header {
+    font-size: 1.2rem;
+}
+
+.menu-item > img {
+    width: 200px;
+    height: 150px;
+    border: 1px solid rgb(223, 203, 178);
+    border-radius: 8px;
 }
 
 footer {
