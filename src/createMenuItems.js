@@ -25,6 +25,7 @@ function createDips(name, price, image) {
     const dipPara = document.createElement('p');
     const dipPricePara = document.createElement('p');
     dipDiv.classList.add('menu-item');
+    dipHeader.classList.add('menu-item-header');
     dipPara.classList.add('menu-item-desc');
     dipImage.setAttribute('src', `${image}`);
     dipHeader.textContent = name;
