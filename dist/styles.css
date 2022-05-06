@@ -1,5 +1,10 @@
 html {
     box-sizing: border-box;
+    background: url('../images/banana-pudding.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 *, *:before, *:after {
@@ -16,7 +21,7 @@ body {
 #content {
     display: grid;
     grid-template-rows: 1fr 5fr .5fr;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 header {
@@ -24,7 +29,7 @@ header {
     justify-content: center;
     align-items: center;
     /* gap: 20px; */
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.685);
     box-shadow: 0px 10px 21px -6px #666464;
     position: relative;
     padding: 1rem;
@@ -39,7 +44,7 @@ header {
 
 header > button {
     border: none;
-    background: black;
+    background: rgba(0, 0, 0, 0);
     color: antiquewhite;
     font-size: 2.5rem;
     cursor: pointer;
@@ -49,16 +54,15 @@ header > button {
 }
 
 header > button:hover {
-    background-color: rgb(36, 33, 33);
+    background-color: rgba(36, 33, 33, 0.37);
     border-bottom: 2px solid antiquewhite;
 }
 
 header > button:active {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.685);
 }
 
 main {
-    background-color: rgb(223, 203, 178);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,22 +72,52 @@ main {
 main > div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 475px;
-    min-height: 550px;
+    gap: 1rem;
+    width: 50rem;
+    min-height: 30rem;
+    margin: 2rem 0 2rem 0 ;
     padding: 1rem;
-    border: 3px solid rgb(0, 0, 199);
+    border: 3px solid rgb(223, 203, 178);
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.541);
     color: rgb(223, 203, 178);
 }
 
+main > div > h2 {
+    font-size: 4rem;
+    border-bottom: 4px solid rgb(223, 203, 178);
+}
+
+main > div > h3 {
+    font-size: 2rem;
+    margin-right: auto;
+    /* border-bottom: 2px solid rgb(223, 203, 178); */
+}
+
 .menu-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.menu-item-header {
+    font-size: 1.2rem;
+}
+
+.menu-item > img {
+    width: 200px;
+    height: 150px;
+    border: 1px solid rgb(223, 203, 178);
+    border-radius: 8px;
 }
 
 footer {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.685);
 }
