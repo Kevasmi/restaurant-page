@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    background: url('../images/banana-pudding.jpg') no-repeat center center fixed; 
+    background: url('../dist/images/banana-pudding.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -28,7 +28,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* gap: 20px; */
     background-color: rgba(0, 0, 0, 0.685);
     box-shadow: 0px 10px 21px -6px #666464;
     position: relative;

@@ -49,7 +49,7 @@ function createContact() {
     const contactPara = document.createElement('p');
     const contactMap = document.createElement('img');
     contactDiv.setAttribute('id', 'contact-check');
-    contactMap.setAttribute('src', `../images/map.png`)
+    contactMap.setAttribute('src', `../dist/images/map.png`)
     contactLogo.textContent = 'Contact Us';
     contactPara.textContent = '(123) 456-7890';
     contactDiv.appendChild(contactLogo);
