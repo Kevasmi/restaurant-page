@@ -18,10 +18,10 @@ function bindEvents() {
             main.removeChild(main.firstChild);
             let menu = createMenu();
             main.appendChild(menu.menuDiv);
-            menu.cookieGrid.appendChild(createCookies('Chocolate Chip', '$2.00', '../dist/images/chocolate-chip.jpg'));
-            menu.cookieGrid.appendChild(createCookies('Brookie', '$3.50', '../dist/images/brookie.jpg'));
-            menu.dipGrid.appendChild(createDips('Milk', '$1.50', '../dist/images/milk.jpg'));
-            menu.dipGrid.appendChild(createDips('Banana Pudding', '$1.50', '../dist/images/banana-pudding-menu.jpg'));
+            menu.cookieGrid.appendChild(createCookies('Chocolate Chip', '$2.00', 'images/chocolate-chip.jpg'));
+            menu.cookieGrid.appendChild(createCookies('Brookie', '$3.50', 'images/brookie.jpg'));
+            menu.dipGrid.appendChild(createDips('Milk', '$1.50', 'images/milk.jpg'));
+            menu.dipGrid.appendChild(createDips('Banana Pudding', '$1.50', 'images/banana-pudding-menu.jpg'));
         } 
     });
     contactBtn.addEventListener('click', () => {
