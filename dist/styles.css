@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Truculenta:opsz@12..72&display=swap');
+
 html {
     box-sizing: border-box;
     background: url('images/banana-pudding.jpg') no-repeat center center fixed; 
@@ -18,6 +20,14 @@ body {
     max-height: 100vh;
 }
 
+h1 {
+    font-family: 'Special Elite', cursive;
+}
+
+p {
+    font-family: 'Truculenta', sans-serif;
+}
+
 #content {
     display: grid;
     grid-template-rows: 1fr 5fr .5fr;
@@ -35,7 +45,7 @@ header {
 }
 
 .logo {
-    color: rgb(223, 203, 178);
+    color: rgb(240, 174, 202);
     font-size: 4rem;
     font-weight: 400;
     margin-right: auto;
@@ -44,7 +54,8 @@ header {
 header > button {
     border: none;
     background: rgba(0, 0, 0, 0);
-    color: antiquewhite;
+    color: rgb(240, 174, 202);
+    font-family: 'Special Elite', cursive;
     font-size: 2.5rem;
     cursor: pointer;
     min-height: 3rem;
@@ -54,7 +65,7 @@ header > button {
 
 header > button:hover {
     background-color: rgba(36, 33, 33, 0.37);
-    border-bottom: 2px solid antiquewhite;
+    border-bottom: 2px solid rgb(240, 174, 202);
 }
 
 header > button:active {
@@ -66,6 +77,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Special Elite', cursive;
+    /* font-family: 'Truculenta', sans-serif; */
 }
 
 main > div {
@@ -77,15 +90,16 @@ main > div {
     min-height: 30rem;
     margin: 2rem 0 2rem 0 ;
     padding: 1rem;
-    border: 3px solid rgb(223, 203, 178);
+    border: 3px solid rgb(240, 174, 202);
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.541);
     color: rgb(223, 203, 178);
 }
 
 main > div > h2 {
-    font-size: 3rem;
-    border-bottom: 4px solid rgb(223, 203, 178);
+    font-size: 4rem;
+    color: rgb(240, 174, 202);
+    border-bottom: 4px solid rgb(240, 174, 202);
 }
 
 main > div > h3 {
@@ -103,13 +117,19 @@ main > div > h3 {
 }
 
 .home-para-div > p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+}
+
+#menu-check > h3 {
+    font-family: 'Truculenta', sans-serif;
+
 }
 
 .menu-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10rem;
+    font-family: 'Truculenta', sans-serif;
 }
 
 .menu-item {
@@ -120,6 +140,7 @@ main > div > h3 {
 
 .menu-item-header {
     font-size: 1.2rem;
+    
 }
 
 .menu-item > img {
@@ -129,11 +150,15 @@ main > div > h3 {
     border-radius: 8px;
 }
 
+.menu-item-price {
+    font-weight: bold;
+}
+
 #contact-check > img {
     height: 25rem;
     width: 25rem;
     border-radius: 8px;
-    border: 4px solid black;
+    border: 4px solid rgb(223, 203, 178);
 }
 
 footer {
